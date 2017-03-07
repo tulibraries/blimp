@@ -19,7 +19,7 @@ Gem::Specification.new do |s|
   s.add_dependency "rails", "~> 5.0.1"
   s.add_dependency "ruby-progressbar"
   s.add_dependency "carrierwave", "~> 1.0"
-  s.add_dependency "harvest_csv", git: "https://github.com/tulibraries/harvest_csv.git"
+  s.add_dependency "harvest_csv"
 
   s.add_development_dependency "sqlite3"
 end
