@@ -1,3 +1,5 @@
+require 'tempfile'
+require 'harvest_csv'
 require_dependency "blimp/application_controller"
 
 module Blimp
@@ -16,6 +18,8 @@ module Blimp
     # GET /uploads/new
     def new
       @upload = Upload.new
+      basename = Dir::Tmpname.make_tmpname(['solr_map-', '.yml'], nil)
+      @upload.map_filename = File.join(Rails.root, 'tmp', basename)
     end
 
     # GET /uploads/1/edit
