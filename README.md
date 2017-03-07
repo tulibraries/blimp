@@ -21,6 +21,15 @@ Or install it yourself as:
 $ gem install blimp
 ```
 
+Then migrate the blimp database
+```bash
+$ rake blimp:install:migrations 
+$ rake db:migrate
+```
+
+To import a CSV file with headers, visit [http://0.0.0.0:3000/blimp/uploads], select the file to ingest and enter the header of the column with the unique ID.
+Blimp will import the data when you submit the form.
+
 ## Contributing
 Contribution directions go here.
 
