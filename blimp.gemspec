@@ -7,11 +7,11 @@ require "blimp/version"
 Gem::Specification.new do |s|
   s.name        = "blimp"
   s.version     = Blimp::VERSION
-  s.authors     = [""]
-  s.email       = [""]
-  s.homepage    = "TODO"
-  s.summary     = "TODO: Summary of Blimp."
-  s.description = "TODO: Description of Blimp."
+  s.authors     = ["Steven Ng"]
+  s.email       = ["steven.ng@temple.edu"]
+  s.homepage    = "https://github.com/tulibraries/blimp"
+  s.summary     = "Datafile to Solr importer."
+  s.description = "Rails engine plugin in for Blacklight for importing datafiles directly into a Solr database."
   s.license     = "MIT"
 
   s.files = Dir["{app,config,db,lib}/**/*", "MIT-LICENSE", "Rakefile", "README.md"]

@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  map_filename: MyString
+  id_field: MyString
+  datafile: MyString
+
+two:
+  map_filename: MyString
+  id_field: MyString
+  datafile: MyString

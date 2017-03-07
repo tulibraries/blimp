@@ -12,3 +12,9 @@ gemspec
 
 # To use a debugger
 # gem 'byebug', group: [:development, :test]
+group :development, :test do
+  gem 'pry-rails'
+end
+
+gem 'carrierwave', '~> 1.0'
+gem 'harvest_csv', git: 'https://github.com/tulibraries/harvest_csv.git'
