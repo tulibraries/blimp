@@ -16,16 +16,15 @@
   </div>
 
   <div class="field">
-    <%= f.label :datafile, "Upload data file:" %>
-    <%= f.file_field :datafile %>
-  </div>
-
-  <div class="field">
     <%= f.label :id_field %>
     <%= f.text_field :id_field %>
   </div>
 
-  <div class="actions">
-    <%= f.submit %>
+  <div class="field">
+    <%= f.label :datafile, "Upload data file:" %>
+    <%= f.file_field :fileupload, multiple: false, name: "upload[datafile]" %>
+    <div id="progress">
+        <div class="bar" style="width: 0%;"></div>
+    </div>
   </div>
 <% end %>

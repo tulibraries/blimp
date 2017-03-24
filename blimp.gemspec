@@ -19,6 +19,7 @@ Gem::Specification.new do |s|
   s.add_dependency "rails", "~> 5.0.1"
   s.add_dependency "ruby-progressbar"
   s.add_dependency "carrierwave", "~> 1.0"
+  s.add_dependency "jquery-fileupload-rails"
 
   s.add_development_dependency "sqlite3"
 end

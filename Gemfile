@@ -14,4 +14,7 @@ gemspec
 # gem 'byebug', group: [:development, :test]
 
 gem 'carrierwave', '~> 1.0'
+gem 'jquery-rails'
+gem 'jquery-fileupload-rails'
 gem 'harvest_csv', git: 'https://github.com/tulibraries/harvest_csv.git'
+gem 'pry'

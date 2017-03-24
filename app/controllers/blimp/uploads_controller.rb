@@ -48,6 +48,8 @@ module Blimp
 
     # DELETE /uploads/1
     def destroy
+      FileUtils.rm(@upload.datafile.current_path) if FileTest.exist?(@upload.datafile.current_path)
+      FileUtils.rm(@upload.map_filename) if FileTest.exist?(@upload.map_filename)
       @upload.destroy
       redirect_to uploads_url, notice: 'Upload was successfully destroyed.'
     end
