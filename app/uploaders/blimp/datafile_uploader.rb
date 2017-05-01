@@ -36,7 +36,7 @@ module Blimp
       # Generate a SOLR map file
       HarvestCSV.make_map(current_path,
                           model.map_filename,
-                          model.id_field)
+                          model.id_field) unless File.exist?(File.expand_path model.map_filename)
       # Harvest the data
       HarvestCSV.harvest(current_path,
                          model.map_filename,

@@ -4,7 +4,7 @@ require_dependency "blimp/application_controller"
 
 module Blimp
   class UploadsController < ApplicationController
-    before_action :set_upload, only: [:show, :edit, :update, :destroy]
+    before_action :set_upload, only: [:show, :edit, :upload, :delete]
 
     # GET /uploads
     def index
@@ -18,8 +18,7 @@ module Blimp
     # GET /uploads/new
     def new
       @upload = Upload.new
-      basename = Dir::Tmpname.make_tmpname(['solr_map-', '.yml'], nil)
-      @upload.map_filename = File.join(Rails.root, 'tmp', basename)
+      @upload.map_filename = File.join(Rails.root, 'config', 'solr_map.yml')
     end
 
     # GET /uploads/1/edit

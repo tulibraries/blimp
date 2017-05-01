@@ -1,8 +1,8 @@
 GIT
   remote: https://github.com/tulibraries/harvest_csv.git
-  revision: 164d5cebb8f3bb91adef21bb8cad2db99e980980
+  revision: f5ee82f570c065d399506987e35f2c1f4663c1cb
   specs:
-    harvest_csv (0.0.3)
+    harvest_csv (0.0.4)
       activesupport (~> 5.0)
       rsolr (~> 1.0)
       ruby-progressbar (~> 1.8)
@@ -10,7 +10,7 @@ GIT
 PATH
   remote: .
   specs:
-    blimp (0.1.0)
+    blimp (0.1.1)
       carrierwave (~> 1.0)
       rails (~> 5.0.1)
       ruby-progressbar
@@ -63,8 +63,8 @@ GEM
       mime-types (>= 1.16)
     concurrent-ruby (1.0.5)
     erubis (2.7.0)
-    globalid (0.3.7)
-      activesupport (>= 4.1.0)
+    globalid (0.4.0)
+      activesupport (>= 4.2.0)
     i18n (0.8.1)
     loofah (2.0.3)
       nokogiri (>= 1.5.9)

@@ -1,0 +1,114 @@
+---
+year:
+- year_display
+- year_facet
+original_order:
+- original_order_display
+- original_order_facet
+also_runs:
+- also_runs_display
+- also_runs_facet
+prize:
+- prize_display
+- prize_facet
+game_id:
+- id
+- game_id_display
+- game_id_facet
+group:
+- group_display
+- group_facet
+short_description:
+- short_description_display
+- short_description_facet
+- short_description_t
+title:
+- title_display
+- title_facet
+- title_t
+long_description:
+- long_description_display
+- long_description_facet
+- long_description_t
+event_type:
+- event_type_display
+- event_type_facet
+game_system:
+- game_system_display
+- game_system_facet
+rules_edition:
+- rules_edition_display
+- rules_edition_facet
+minimum_players:
+- minimum_players_display
+- minimum_players_facet
+maximum_players:
+- maximum_players_display
+- maximum_players_facet
+age_required:
+- age_required_display
+- age_required_facet
+experience_required:
+- experience_required_display
+- experience_required_facet
+materials_provided:
+- materials_provided_display
+- materials_provided_facet
+start_date:
+- start_date_display
+- start_date_facet
+duration:
+- duration_display
+- duration_facet
+end_date:
+- end_date_display
+- end_date_facet
+gm_name_s:
+- gm_name_s_display
+- gm_name_s_facet
+- gm_name_t
+website:
+- website_display
+- website_facet
+email:
+- email_display
+- email_facet
+tournament:
+- tournament_display
+- tournament_facet
+round_number:
+- round_number_display
+- round_number_facet
+total_rounds:
+- total_rounds_display
+- total_rounds_facet
+minimum_play_time:
+- minimum_play_time_display
+- minimum_play_time_facet
+attendee_registration:
+- attendee_registration_display
+- attendee_registration_facet
+cost:
+- cost_display
+- cost_facet
+location:
+- location_display
+- location_facet
+room_name:
+- room_name_display
+- room_name_facet
+table_number:
+- table_number_display
+- table_number_facet
+special_category:
+- special_category_display
+- special_category_facet
+tickets_available:
+- tickets_available_display
+- tickets_available_facet
+last_modified:
+- last_modified_display
+- last_modified_facet
+rules_complexity:
+- rules_complexity_display
+- rules_complexity_facet
