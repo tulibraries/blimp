@@ -27,13 +27,21 @@ module Blimp
 
     # POST /uploads
     def create
-      @upload = Upload.new(upload_params)
+      # Generate a SOLR map file
+      map_filename = upload_params['map_filename']
+      csv_filename = upload_params["datafile"].tempfile.path
+      id_field = upload_params["id_field"]
+      HarvestCSV.make_map(csv_filename,
+                          map_filename,
+                          id_field) unless File.exist?(map_filename)
+      # Harvest the data
+      HarvestCSV.harvest(csv_filename,
+                         map_filename,
+                         solr_endpoint = 'http://localhost:8983/solr/blacklight-core')
 
-      if @upload.save
-        redirect_to @upload, notice: 'Upload was successfully created.'
-      else
-        render :new
-      end
+      #FileUtils.rm(@upload.datafile.current_path) if FileTest.exist?(@upload.datafile.current_path)
+      redirect_to "/", notice: 'Upload was successfully created.'
+
     end
 
     # PATCH/PUT /uploads/1

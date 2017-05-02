@@ -10,7 +10,7 @@ GIT
 PATH
   remote: .
   specs:
-    blimp (0.1.1)
+    blimp (0.2.0)
       carrierwave (~> 1.0)
       rails (~> 5.0.1)
       ruby-progressbar
@@ -68,7 +68,7 @@ GEM
     i18n (0.8.1)
     loofah (2.0.3)
       nokogiri (>= 1.5.9)
-    mail (2.6.4)
+    mail (2.6.5)
       mime-types (>= 1.16, < 4)
     method_source (0.8.2)
     mime-types (3.1)
