@@ -2,7 +2,7 @@
 Short description and motivation.
 
 ## Usage
-How to use my plugin.
+How to use this plugin.
 
 ## Installation
 Add this line to your application's Gemfile:
@@ -26,6 +26,8 @@ Then migrate the blimp database
 $ rake blimp:install:migrations 
 $ rake db:migrate
 ```
+
+The Solr URL is `http://localhost:8983/solr/blacklight-core`. To change the solr core, set the environment variable SOLR_URL.
 
 To import a CSV file with headers, visit [http://0.0.0.0:3000/blimp/uploads], select the file to ingest and enter the header of the column with the unique ID.
 Blimp will import the data when you submit the form.

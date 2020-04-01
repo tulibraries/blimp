@@ -40,7 +40,7 @@ module Blimp
       # Harvest the data
       HarvestCSV.harvest(current_path,
                          model.map_filename,
-                         solr_endpoint = 'http://localhost:8983/solr/blacklight-core')
+                         solr_endpoint = ENV["SOLR_URL"])
     end
 
     # Create different versions of your uploaded files:
