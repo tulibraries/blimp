@@ -18,7 +18,7 @@ Gem::Specification.new do |s|
 
   s.add_dependency "rails", '5.2.4.3'
   s.add_dependency "ruby-progressbar", "1.10.1"
-  s.add_dependency "carrierwave", "2.1.0"
+  s.add_dependency "carrierwave", "2.1.1"
 
   s.add_development_dependency "sqlite3", "1.4.2"
 end
