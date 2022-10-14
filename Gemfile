@@ -14,7 +14,7 @@ gemspec
 # gem 'byebug', group: [:development, :test]
 
 gem 'rails', '5.2.8.1'
-gem 'carrierwave', '2.1.1'
+gem 'carrierwave', '2.2.2'
 gem "ruby-progressbar", "1.10.1"
 gem "sqlite3", "1.4.2"
 
