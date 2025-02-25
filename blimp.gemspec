@@ -16,9 +16,9 @@ Gem::Specification.new do |s|
 
   s.files = Dir["{app,config,db,lib}/**/*", "MIT-LICENSE", "Rakefile", "README.md"]
 
-  s.add_dependency "rails", '6.1.7.7'
+  s.add_dependency "rails"
   s.add_dependency "ruby-progressbar", "1.10.1"
-  s.add_dependency "carrierwave", "3.0.7"
+  s.add_dependency "carrierwave"
 
-  s.add_development_dependency "sqlite3", "1.4.2"
+  s.add_development_dependency "sqlite3"
 end
