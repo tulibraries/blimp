@@ -13,9 +13,9 @@ gemspec
 # To use a debugger
 # gem 'byebug', group: [:development, :test]
 
-gem 'rails', '6.1.7.7'
-gem 'carrierwave', '3.0.7'
+gem 'rails'
+gem 'carrierwave'
 gem "ruby-progressbar", "1.10.1"
-gem "sqlite3", "1.4.2"
+gem "sqlite3"
 
 gem 'harvest_csv', git: 'https://github.com/tulibraries/harvest_csv.git'
