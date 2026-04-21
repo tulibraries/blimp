@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 require "test_helper"
 require "minitest/mock"
 
@@ -43,12 +45,12 @@ class HarvestCSVTest < ActiveSupport::TestCase
 
   private
 
-  def with_tempfile(contents)
-    file = Tempfile.new(["harvest_csv", ".csv"])
-    file.write(contents)
-    file.flush
-    yield file
-  ensure
-    file.close!
-  end
+    def with_tempfile(contents)
+      file = Tempfile.new(["harvest_csv", ".csv"])
+      file.write(contents)
+      file.flush
+      yield file
+    ensure
+      file.close!
+    end
 end

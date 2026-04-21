@@ -1,5 +1,7 @@
-require 'tempfile'
-require 'harvest_csv'
+# frozen_string_literal: true
+
+require "tempfile"
+require "harvest_csv"
 require_dependency "blimp/application_controller"
 
 module Blimp
@@ -18,7 +20,7 @@ module Blimp
     # GET /uploads/new
     def new
       @upload = Upload.new
-      @upload.map_filename = File.join(Rails.root, 'config', 'solr_map.yml')
+      @upload.map_filename = Rails.root.join("config/solr_map.yml").to_s
     end
 
     # GET /uploads/1/edit
@@ -32,7 +34,7 @@ module Blimp
       if @upload.save
         FileUtils.rm(@upload.datafile.current_path) if FileTest.exist?(@upload.datafile.current_path)
         @upload.destroy
-        redirect_to "/", notice: 'Upload was successfully created.'
+        redirect_to "/", notice: "Upload was successfully created."
       else
         render :new
       end
@@ -41,7 +43,7 @@ module Blimp
     # PATCH/PUT /uploads/1
     def update
       if @upload.update(upload_params)
-        redirect_to @upload, notice: 'Upload was successfully updated.'
+        redirect_to @upload, notice: "Upload was successfully updated."
       else
         render :edit
       end
@@ -52,7 +54,7 @@ module Blimp
       FileUtils.rm(@upload.datafile.current_path) if FileTest.exist?(@upload.datafile.current_path)
       FileUtils.rm(@upload.map_filename) if FileTest.exist?(@upload.map_filename)
       @upload.destroy
-      redirect_to uploads_url, notice: 'Upload was successfully destroyed.'
+      redirect_to uploads_url, notice: "Upload was successfully destroyed."
     end
 
     private

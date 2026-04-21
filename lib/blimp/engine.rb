@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 module Blimp
   class Engine < ::Rails::Engine
     isolate_namespace Blimp
