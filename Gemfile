@@ -1,4 +1,6 @@
-source 'https://rubygems.org'
+# frozen_string_literal: true
+
+source "https://rubygems.org"
 
 # Declare your gem's dependencies in blimp.gemspec.
 # Bundler will treat runtime dependencies like base dependencies, and
@@ -13,9 +15,12 @@ gemspec
 # To use a debugger
 # gem 'byebug', group: [:development, :test]
 
-gem 'rails'
-gem 'carrierwave'
+gem "rails", "~> 7.2.0"
+gem "csv"
+gem "carrierwave"
+gem "harvest_csv", git: "https://github.com/tulibraries/harvest_csv.git", branch: "DEVO-1371-Ruby_8.1_compatibility"
 gem "ruby-progressbar", "1.10.1"
 gem "sqlite3"
 
-gem 'harvest_csv', git: 'https://github.com/tulibraries/harvest_csv.git'
+gem "rubocop", "~> 1.85", require: false
+gem "rubocop-rails", "~> 2.31", require: false

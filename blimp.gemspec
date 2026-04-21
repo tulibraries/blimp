@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 $:.push File.expand_path("../lib", __FILE__)
 
 # Maintain your gem's version:
@@ -16,7 +18,9 @@ Gem::Specification.new do |s|
 
   s.files = Dir["{app,config,db,lib}/**/*", "MIT-LICENSE", "Rakefile", "README.md"]
 
-  s.add_dependency "rails"
+  s.add_dependency "rails", ">= 7.2", "< 8.2"
+  s.add_dependency "harvest_csv", ">= 0.1.0"
+  s.add_dependency "csv"
   s.add_dependency "ruby-progressbar", "1.10.1"
   s.add_dependency "carrierwave"
 

@@ -1,6 +1,7 @@
+# frozen_string_literal: true
+
 module Blimp
   class DatafileUploader < CarrierWave::Uploader::Base
-
     # Include RMagick or MiniMagick support:
     # include CarrierWave::RMagick
     # include CarrierWave::MiniMagick
@@ -31,7 +32,7 @@ module Blimp
     # end
 
     process ingest: []
-    
+
     def ingest
       # Generate a SOLR map file
       HarvestCSV.make_map(current_path,
@@ -59,6 +60,5 @@ module Blimp
     # def filename
     #   "something.jpg" if original_filename
     # end
-
   end
 end

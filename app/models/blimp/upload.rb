@@ -1,6 +1,8 @@
+# frozen_string_literal: true
+
 module Blimp
   class Upload < ApplicationRecord
-    validates_presence_of :datafile
+    validates :datafile, presence: true
     mount_uploader :datafile , DatafileUploader
   end
 end
