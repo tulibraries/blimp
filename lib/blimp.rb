@@ -1,3 +1,4 @@
+require "harvest_csv"
 require "blimp/engine"
 
 module Blimp

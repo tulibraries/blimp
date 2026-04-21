@@ -4,7 +4,7 @@ require_dependency "blimp/application_controller"
 
 module Blimp
   class UploadsController < ApplicationController
-    before_action :set_upload, only: [:show, :edit, :upload, :delete]
+    before_action :set_upload, only: [:show, :edit, :update, :destroy]
 
     # GET /uploads
     def index

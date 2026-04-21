@@ -1,18 +1,22 @@
 GIT
   remote: https://github.com/tulibraries/harvest_csv.git
-  revision: c4a6027d912aaadea5b5de2020ddbb98803a9c45
+  revision: f9bd98b74522ca20fbe6870499182b6366698bb3
+  branch: DEVO-1371-Ruby_8.1_compatibility
   specs:
     harvest_csv (0.1.0)
-      activesupport (>= 5, < 8)
+      activesupport (>= 6.1, < 8.2)
       rsolr (~> 2.5)
-      ruby-progressbar (~> 1.8)
+      ruby-progressbar (>= 1.10, < 2)
+      thor (>= 1.3, < 2)
 
 PATH
   remote: .
   specs:
     blimp (0.3.7)
       carrierwave
-      rails
+      csv
+      harvest_csv (>= 0.1.0)
+      rails (>= 7.2, < 8.2)
       ruby-progressbar (= 1.10.1)
 
 GEM
@@ -108,6 +112,7 @@ GEM
     concurrent-ruby (1.3.6)
     connection_pool (3.0.2)
     crass (1.0.6)
+    csv (3.3.5)
     date (3.4.1)
     drb (2.2.3)
     erubi (1.13.1)
@@ -137,7 +142,7 @@ GEM
       pp (>= 0.6.0)
       rdoc (>= 4.0.0)
       reline (>= 0.4.2)
-    json (2.19.2)
+    json (2.19.4)
     logger (1.7.0)
     loofah (2.25.1)
       crass (~> 1.0.2)
@@ -277,8 +282,9 @@ PLATFORMS
 DEPENDENCIES
   blimp!
   carrierwave
+  csv
   harvest_csv!
-  rails
+  rails (~> 7.2.0)
   ruby-progressbar (= 1.10.1)
   sqlite3
 
